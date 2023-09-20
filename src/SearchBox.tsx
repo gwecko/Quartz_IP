@@ -6,7 +6,6 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
-import { color } from "framer-motion";
 
 interface SearchBoxProps {
   onSearch: (keyword: string) => void;
