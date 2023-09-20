@@ -6,6 +6,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
+import { color } from "framer-motion";
 
 interface SearchBoxProps {
   onSearch: (keyword: string) => void;
@@ -30,18 +31,24 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch }) => {
         <Input
           type="text"
           placeholder="Search by name..."
-          size={'md'}
+          size={"md"}
+          variant={"outline"}
           value={searchQuery}
           onChange={handleInputChange}
-          focusBorderColor="orange.300"
-          borderColor={'blackAlpha.400'}
-          borderWidth={'3px'}
+          borderTop={"none"}
+          borderLeft={"none"}
+          borderRight={"none"}
+          focusBorderColor="transparent"
+          _focus={{ borderBottom: "3px solid #F6AD55" }}
+          borderColor={"blackAlpha.300"}
+          borderWidth={"2px"}
+          borderRadius={"1px"}
         />
-        <InputRightElement fontSize={'lg'} >
+        <InputRightElement fontSize={"lg"}>
           <Search2Icon
             aria-label="Search"
-            color={'gray.400'}
-            borderLeftRadius={'1px'}
+            color={"gray.400"}
+            borderLeftRadius={"1px"}
           />
         </InputRightElement>
       </InputGroup>
