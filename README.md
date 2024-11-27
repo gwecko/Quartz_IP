@@ -1,3 +1,5 @@
+[screencap](https://github.com/user-attachments/assets/71f4dab3-b52d-4dd5-8a90-660e44559516)
+
 Thanks for your time!
 
 Built using React, TypeScript, & ChakraUI
